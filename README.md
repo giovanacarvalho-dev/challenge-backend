@@ -7,4 +7,4 @@ Um microsserviço em Java 21+ com Spring boot 3+ que vai expor um endpoint GET q
 
 https://front-challenge.netlify.app
 
-(Comoa api nao possui um certificado, é necessario habilitar requisicoes nao seguras no navegador)
+(Como a api não possui um certificado, é necessario habilitar requisicoes nao seguras no navegador)
