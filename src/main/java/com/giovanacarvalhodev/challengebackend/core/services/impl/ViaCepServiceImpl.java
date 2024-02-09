@@ -4,7 +4,6 @@ import com.giovanacarvalhodev.challengebackend.core.dataProvider.FindAddressByCe
 import com.giovanacarvalhodev.challengebackend.core.services.ViaCepService;
 import com.giovanacarvalhodev.challengebackend.dataProvider.client.response.AddressResponse;
 import com.giovanacarvalhodev.challengebackend.exceptions.AddressNotFoundException;
-import com.giovanacarvalhodev.challengebackend.exceptions.ExternApiException;
 import feign.FeignException;
 
 public class ViaCepServiceImpl implements ViaCepService {
@@ -17,10 +16,13 @@ public class ViaCepServiceImpl implements ViaCepService {
     public AddressResponse findAddressByCep(String cep) {
         try {
             AddressResponse address = findAddressByCep.find(cep);
-            if(address.getCep() == null) throw new ExternApiException(
-                    500,
-                    "extern error");
-            return address;
+            if(address.getCep() == null) throw new AddressNotFoundException(
+                    404,
+                    "Address not found",
+                    null,
+                    null,
+                    null
+            );
         } catch (FeignException.FeignClientException exception) {
             if( exception.status() == 404) throw new AddressNotFoundException(
                     404,
