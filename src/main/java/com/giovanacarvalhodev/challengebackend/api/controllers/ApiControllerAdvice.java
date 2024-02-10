@@ -2,6 +2,7 @@ package com.giovanacarvalhodev.challengebackend.api.controllers;
 
 import com.giovanacarvalhodev.challengebackend.api.ApiErrors;
 import com.giovanacarvalhodev.challengebackend.exceptions.AddressNotFoundException;
+import com.giovanacarvalhodev.challengebackend.exceptions.ExternApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -28,6 +29,15 @@ public class ApiControllerAdvice {
     public ApiErrors handleValidationException(HandlerMethodValidationException exception) {
         String messageErr = "Invalid cep";
         logger.error("status code: " + HttpStatus.BAD_REQUEST);
+        logger.error(messageErr);
+        return new ApiErrors(messageErr);
+    }
+
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ExceptionHandler(ExternApiException.class)
+    public ApiErrors handleExternApiException(ExternApiException exception) {
+        String messageErr = "Server Error";
+        logger.error("status code: " + HttpStatus.INTERNAL_SERVER_ERROR);
         logger.error(messageErr);
         return new ApiErrors(messageErr);
     }

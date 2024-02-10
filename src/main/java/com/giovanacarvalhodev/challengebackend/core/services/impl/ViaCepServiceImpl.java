@@ -18,19 +18,17 @@ public class ViaCepServiceImpl implements ViaCepService {
     public AddressResponse findAddressByCep(String cep) {
         try {
             AddressResponse address = findAddressByCep.find(cep);
-            if(address.getCep() == null) throw new ExternApiException(
+            if(address.getErro()) throw new ExternApiException(
                     404,
-                    "error in extern api - address not found");
+                    "Address not found"
+            );
             return address;
-        } catch (FeignException.FeignClientException  | ExternApiException exception) {
+        } catch (AddressNotFoundException  | ExternApiException exception) {
             if( exception.status() == 404) throw new AddressNotFoundException(
                     404,
-                    "Address not found",
-                    exception.request(),
-                    null,
-                    exception.responseHeaders()
+                    "Address not found"
             );
+            throw new ExternApiException(500, "Server Error");
         }
-        return null;
     }
 }
