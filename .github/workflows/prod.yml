@@ -22,11 +22,16 @@ jobs:
         run: docker build -t giovanacarvalhodev/challenge-backend .
       - name: Push Image Docker
         run: docker push giovanacarvalhodev/challenge-backend
+
   deploy:
     needs: build
     runs-on: self-hosted
     steps:
-    - name: Pull for DockerHub
-      run: docker pull giovanacarvalhodev/challenge-backend:latest
-    - name: Run docker container
-      run: docker run -d -p 8080:8080 --name challenge giovanacarvalhodev/challenge-backend
+      - name: Pull for DockerHub
+        run: docker pull giovanacarvalhodev/challenge-backend:latest
+      - name: Stop Docker Container if running
+        run: docker stop challenge || true
+      - name: Remove Docker Container if exists
+        run: docker rm challenge || true
+      - name: Run docker container
+        run: docker run -d -p 8080:8080 --name challenge giovanacarvalhodev/challenge-backend
