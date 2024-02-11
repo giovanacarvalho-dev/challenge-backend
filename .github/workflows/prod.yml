@@ -14,8 +14,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 21-ea
-      - name: Build project
-        run: mvn clean install -DskipTests
+      - name: Build project and run tests
+        run: mvn clean verify
       - name: Login Docker
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: Build Docker
