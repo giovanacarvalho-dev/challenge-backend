@@ -1,17 +1,78 @@
-2024-02-11T14:44:38.487-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 3067 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
-2024-02-11T14:44:38.488-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-02-11T14:44:38.509-03:00  INFO 3067 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-02-11T14:44:38.509-03:00  INFO 3067 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-02-11T14:44:38.970-03:00  INFO 3067 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
-2024-02-11T14:44:39.305-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-02-11T14:44:39.311-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-02-11T14:44:39.311-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
-2024-02-11T14:44:39.332-03:00  INFO 3067 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-02-11T14:44:39.332-03:00  INFO 3067 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 823 ms
-2024-02-11T14:44:39.489-03:00  INFO 3067 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-02-11T14:44:39.814-03:00  INFO 3067 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
-2024-02-11T14:44:39.852-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-02-11T14:44:39.862-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 1.544 seconds (process running for 2.053)
-2024-02-11T14:44:40.067-03:00  INFO 3067 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-11T14:44:40.068-03:00  INFO 3067 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-02-11T14:44:40.068-03:00  INFO 3067 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-14T10:22:55.752-03:00  INFO 3067 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-02-14T10:22:55.838-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 3067 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
+2024-02-14T10:22:55.838-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T10:22:56.020-03:00  INFO 3067 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
+2024-02-14T10:22:56.081-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-14T10:22:56.082-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T10:22:56.082-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-14T10:22:56.089-03:00  INFO 3067 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T10:22:56.089-03:00  INFO 3067 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 250 ms
+2024-02-14T10:22:56.155-03:00  INFO 3067 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T10:22:56.344-03:00  INFO 3067 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-02-14T10:22:56.360-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-14T10:22:56.366-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 0.549 seconds (process running for 15799.128)
+2024-02-14T10:22:56.367-03:00  INFO 3067 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-14T10:22:57.755-03:00  INFO 3067 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-02-14T10:22:57.827-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 3067 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
+2024-02-14T10:22:57.827-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T10:22:57.935-03:00  INFO 3067 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
+2024-02-14T10:22:57.974-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-14T10:22:57.974-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T10:22:57.974-03:00  INFO 3067 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-14T10:22:57.980-03:00  INFO 3067 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T10:22:57.980-03:00  INFO 3067 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+2024-02-14T10:22:58.034-03:00  INFO 3067 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T10:22:58.168-03:00  INFO 3067 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-02-14T10:22:58.182-03:00  INFO 3067 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-14T10:22:58.189-03:00  INFO 3067 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 0.377 seconds (process running for 15800.95)
+2024-02-14T10:22:58.189-03:00  INFO 3067 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-14T10:23:21.581-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 4525 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
+2024-02-14T10:23:21.582-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T10:23:21.610-03:00  INFO 4525 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-14T10:23:21.611-03:00  INFO 4525 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-14T10:23:22.227-03:00  INFO 4525 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
+2024-02-14T10:23:22.562-03:00  INFO 4525 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-14T10:23:22.569-03:00  INFO 4525 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T10:23:22.569-03:00  INFO 4525 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-14T10:23:22.587-03:00  INFO 4525 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T10:23:22.587-03:00  INFO 4525 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2024-02-14T10:23:22.737-03:00  INFO 4525 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T10:23:23.085-03:00  INFO 4525 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-02-14T10:23:23.123-03:00  INFO 4525 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-14T10:23:23.132-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 1.762 seconds (process running for 2.184)
+2024-02-14T10:23:23.189-03:00  INFO 4525 --- [RMI TCP Connection(4)-192.168.15.31] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14T10:23:23.189-03:00  INFO 4525 --- [RMI TCP Connection(4)-192.168.15.31] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-14T10:23:23.189-03:00  INFO 4525 --- [RMI TCP Connection(4)-192.168.15.31] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-14T10:26:09.988-03:00  INFO 4525 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-02-14T10:26:10.081-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 4525 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
+2024-02-14T10:26:10.081-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T10:26:10.269-03:00  INFO 4525 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
+2024-02-14T10:26:10.330-03:00  INFO 4525 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-14T10:26:10.331-03:00  INFO 4525 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T10:26:10.331-03:00  INFO 4525 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-14T10:26:10.337-03:00  INFO 4525 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T10:26:10.337-03:00  INFO 4525 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 255 ms
+2024-02-14T10:26:10.400-03:00  INFO 4525 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T10:26:10.564-03:00  INFO 4525 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-02-14T10:26:10.579-03:00  INFO 4525 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-14T10:26:10.585-03:00  INFO 4525 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 0.518 seconds (process running for 169.645)
+2024-02-14T10:26:10.586-03:00  INFO 4525 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-14T10:27:03.616-03:00  INFO 5004 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Starting ChallengeBackendApplication using Java 21.0.2 with PID 5004 (/Users/giovanacarvalho/IdeaProjects/challenge-backend/target/classes started by giovanacarvalho in /Users/giovanacarvalho/IdeaProjects/challenge-backend)
+2024-02-14T10:27:03.617-03:00  INFO 5004 --- [restartedMain] c.g.c.ChallengeBackendApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T10:27:03.637-03:00  INFO 5004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-14T10:27:03.637-03:00  INFO 5004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-14T10:27:04.084-03:00  INFO 5004 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c9e99b2-292f-3fd6-adce-492f8fcd45cd
+2024-02-14T10:27:04.388-03:00  INFO 5004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-14T10:27:04.395-03:00  INFO 5004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T10:27:04.395-03:00  INFO 5004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-14T10:27:04.413-03:00  INFO 5004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T10:27:04.413-03:00  INFO 5004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-02-14T10:27:04.569-03:00  INFO 5004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T10:27:04.889-03:00  INFO 5004 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-02-14T10:27:04.930-03:00  INFO 5004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-14T10:27:04.940-03:00  INFO 5004 --- [restartedMain] c.g.c.ChallengeBackendApplication        : Started ChallengeBackendApplication in 1.504 seconds (process running for 2.041)
+2024-02-14T10:27:05.171-03:00  INFO 5004 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14T10:27:05.171-03:00  INFO 5004 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-14T10:27:05.172-03:00  INFO 5004 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-14T10:28:35.076-03:00  INFO 5004 --- [http-nio-8080-exec-1] c.g.c.api.controllers.AddressController  : success: 200 OK
+2024-02-14T10:28:35.080-03:00  INFO 5004 --- [http-nio-8080-exec-1] c.g.c.api.controllers.AddressController  : AddressResponse(erro=false, cep=30494-390, logradouro=Rua Desembargador Amílcar de Castro, complemento=, bairro=Estoril, localidade=Belo Horizonte, uf=MG, ibge=3106200, gia=, ddd=31, siafi=4123)
